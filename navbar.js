@@ -1,36 +1,3 @@
-const knowledgeList = document.querySelector("#knowledge-list");
-
-const technologies = [
-  { name: 'HTML', icon: 'fa-html5', faPrefix: 'fab' }, // Använd rätt Font Awesome klasser
-  { name: 'CSS', icon: 'fa-css3-alt', faPrefix: 'fab' },
-  { name: 'JavaScript', icon: 'fa-js-square', faPrefix: 'fab' },
-  { name: 'Git', icon: 'fa-git-alt', faPrefix: 'fab' },
-  { name: 'SQL (LESS, SASS)', icon: 'fa-database', faPrefix: 'fas' },
-  // { name: 'LESS', icon: 'fa-less', faPrefix: 'fab' },
-  // { name: 'SASS', icon: 'fa-sass', faPrefix: 'fab' },
-  { name: 'Figma', icon: 'fa-figma', faPrefix: 'fab' },
-  { name: 'SEO', icon: 'fa-search', faPrefix: 'fas' }, // Exempel, Font Awesome har ingen specifik SEO-ikon
-  { name: 'WordPress', icon: 'fa-wordpress', faPrefix: 'fab' }
-];
-
-// Funktion för att rendera teknologierna med Font Awesome ikoner
-function renderTechnologies(technologies) {
-  const knowledgeList = document.querySelector("#knowledge-list");
-  knowledgeList.innerHTML = '';
-
-  technologies.forEach(tech => {
-   let listItem = document.createElement("li");
-   let icon = document.createElement("i");
-   icon.className = `${tech.faPrefix} ${tech.icon}`;
-   listItem.appendChild(icon);
-   listItem.innerHTML += ` ${tech.name}`; // Lägger till namnet efter ikonen
-   
-   knowledgeList.append(listItem);
-  });  
-}
-
-renderTechnologies(technologies);
-
 class NavigationBar extends HTMLElement {
   constructor() {
     super();
@@ -79,4 +46,6 @@ class NavigationBar extends HTMLElement {
 }
 
 // Definiera custom element
-customElements.define('navigation-bar', NavigationBar);
+//customElements.define('navigation-bar', NavigationBar);
+
+export {NavigationBar};

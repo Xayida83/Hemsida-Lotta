@@ -1,0 +1,87 @@
+@import "./partials/navbar";
+@import "./partials/variables";
+
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 200vh;
+
+  h1 {
+    font-family: "DM Serif Display";
+    font-size: 2.6em;
+    color: $textBrand; 
+    text-align: center;
+  }
+
+  h2 {
+      font-family: "DM Serif Display";
+      font-size: 1.8em;
+      color: $textBrand; 
+      text-align: center;
+
+  }
+  h3 {
+      font-family: "DM Serif Display";
+      font-size: 1.6em;
+      color: $primaryTextColor; 
+      text-align: center;
+  }
+  #hello {
+    color: $primaryTextColor;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 20px;
+    #text-title {
+      max-width: 50%;
+    }
+  }
+  #name {
+    max-width:47% ;
+    position: absolute;
+    top: 30px;
+    left: 83px;
+    #lastname {
+      position: relative;
+      left: 44px;
+    }
+  }
+  #portrait {
+    width: 14em;
+    height: 14em;
+    border-radius: 999px;
+    object-fit: contain;    
+  }
+  figcaption {
+    color: $primaryTextColor;
+  }
+  #knowledge-list{
+    margin-top: 1em;
+    color: $textTeriary;
+    li {
+      font-size: 16px;
+      margin: 0.5em;
+    }
+  }
+  #projects-container {
+    display: flex;
+    flex-direction: column;
+    #display-projects img{
+      margin: 1em 0 0 0;
+    }
+  }
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}

@@ -1,6 +1,7 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import "./variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ ul {
   padding: 10px;
   background: var(--violet);
 } */
+
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav {
@@ -37,16 +39,17 @@ ul {
   padding-bottom: 20px;
   border-radius: 5px 5px 25px 25px;
   margin: 300px auto 0;
-  background: #1B998B;
-  box-shadow: rgba(50, 50, 93, 0.1) 0 30px 60px -12px, rgba(0, 0, 0, 0.15) 0 18px 36px -18px;
+  background: $seconderyColor;
+  box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
+    rgb(0 0 0 / 15%) 0 18px 36px -18px;
 }
 
-.nav [type=checkbox] {
+.nav [type="checkbox"] {
   position: absolute;
   left: -9999px;
 }
 
-.nav [type=checkbox] + label {
+.nav [type="checkbox"] + label {
   position: relative;
   width: 75px;
   height: 75px;
@@ -56,14 +59,14 @@ ul {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
-  background: #E91E63;
+  background: $surfaceBrand;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.2s;
 }
 
-.nav [type=checkbox] + label:hover {
-  background: #E91E63;
+.nav [type="checkbox"] + label:hover {
+  background: $surfaceBrand;
 }
 
 .menu li {
@@ -97,7 +100,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #E91E63;
+  background: $surfaceBrand;
 }
 
 .menu li a span {
@@ -111,14 +114,14 @@ ul {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-  color: #fefae0;
-  background-color: rgba(50, 48, 67, 0.6509803922);
+  color: $primaryTextColor;
+  background-color: $teriaryColor;
   font-weight: bold;
   border-radius: 5px;
 }
 
 .nav input:checked + label {
-  background: #E91E63;
+  background: $surfaceBrand;
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
   transform: translateY(calc(-50% + 4px));
 }
@@ -149,84 +152,3 @@ ul {
   opacity: 1;
   transition-delay: 0.9s;
 }
-
-body {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  background: #2E294E;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  height: 200vh;
-}
-body h1 {
-  font-family: "DM Serif Display";
-  font-size: 2.6em;
-  color: #E91E63;
-  text-align: center;
-}
-body h2 {
-  font-family: "DM Serif Display";
-  font-size: 1.8em;
-  color: #E91E63;
-  text-align: center;
-}
-body h3 {
-  font-family: "DM Serif Display";
-  font-size: 1.6em;
-  color: #fefae0;
-  text-align: center;
-}
-body #hello {
-  color: #fefae0;
-  height: 12em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: start;
-  padding: 20px;
-}
-body #hello #text-title {
-  max-width: 50%;
-}
-body #name {
-  max-width: 47%;
-  position: absolute;
-  top: 30px;
-  left: 83px;
-}
-body #name #lastname {
-  position: relative;
-  left: 44px;
-}
-body #portrait {
-  width: 14em;
-  height: 14em;
-  border-radius: 999px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-body figcaption {
-  color: #fefae0;
-}
-body #knowledge-list {
-  margin-top: 1em;
-  color: #DCEC99;
-}
-body #knowledge-list li {
-  font-size: 16px;
-  margin: 0.5em;
-}
-body #projects-container {
-  display: flex;
-  flex-direction: column;
-}
-body #projects-container #display-projects img {
-  margin: 1em 0 0 0;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}/*# sourceMappingURL=style.css.map */
