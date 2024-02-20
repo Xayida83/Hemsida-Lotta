@@ -102,7 +102,7 @@ ul {
 
 .menu li a span {
   position: absolute;
-  top: 7px;
+  top: -7px;
   left: 0;
   transform: translateY(calc(-100% - 5px));
   width: 100%;
@@ -150,14 +150,29 @@ ul {
   transition-delay: 0.9s;
 }
 
+¨#not-found-container {
+  height: 100vh;
+}
+
+.heading {
+  margin: 30px 0;
+}
+
+.link {
+  color: #DCEC99;
+  font-size: 20px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
   background: #2E294E;
+}
+body #index-container {
+  height: 80em;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  height: 200vh;
 }
 body h1 {
   font-family: "DM Serif Display";
@@ -168,7 +183,7 @@ body h1 {
 body h2 {
   font-family: "DM Serif Display";
   font-size: 1.8em;
-  color: #E91E63;
+  color: #fefae0;
   text-align: center;
 }
 body h3 {
@@ -184,10 +199,10 @@ body #hello {
   flex-direction: column;
   justify-content: space-between;
   text-align: start;
-  padding: 20px;
+  padding: 1em;
 }
 body #hello #text-title {
-  max-width: 50%;
+  max-width: 12em;
 }
 body #name {
   max-width: 47%;
@@ -208,6 +223,7 @@ body #portrait {
 }
 body figcaption {
   color: #fefae0;
+  padding: 0 1em;
 }
 body #knowledge-list {
   margin-top: 1em;

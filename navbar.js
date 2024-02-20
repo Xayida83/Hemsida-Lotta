@@ -13,39 +13,41 @@ class NavigationBar extends HTMLElement {
         <label for="menu">Menu</label>
         <ul class="menu">
           <li>
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="404.html">
               <span>About</span>
               <i class="fas fa-address-card" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="404.html">
               <span>Projects</span>
               <i class="fas fa-tasks" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a class="nav-link" href="#0">
-              <span>Clients</span>
+            <a class="nav-link" href="404.html">
+              <span>CV</span>
               <i class="fas fa-users" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="404.html">
               <span>Contact</span>
               <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html">
+              <span>HOME</span>
+              <i aria-hidden="true"></i>
             </a>
           </li>
         </ul>
       </nav>
     `;
-
-    // Notera: För shadow DOM, behöver du unika ID:n eller anpassa ditt CSS för att undvika konflikter
-    // och se till att stilar tillämpas korrekt inom komponenten.
   }
 }
 
 // Definiera custom element
-//customElements.define('navigation-bar', NavigationBar);
+customElements.define('navigation-bar', NavigationBar);
 
-export {NavigationBar};

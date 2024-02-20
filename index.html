@@ -8,46 +8,48 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="navbar.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <title>Charlotta</title>
   </head>
   <body>
-    <div id="hello">
-      <p id="text-hello">Hi, I'm</p>
-      <p id="text-title">
-        Frontend Developer with .NET experience
-      </p>
-    </div>
-    <div id="name">
-      <h1>
-        <span  id="firstname">Charlotta</span>
-        <span  id="lastname">Lindberg</span>
-      </h1>
-    </div>
-    <figure id="portrait-text">
-      <img
-        id="portrait"
-        src="/images/portrait.webp"
-        alt="Portrait of Lotta"
-        onerror="this.onerror=null; this.src='images/portrait.jpg'"
-      />
-      <figcaption>
-        "Passionate about creating user-friendly
-        web experiences"
-      </figcaption>
-    </figure>
-    <div id="knowledge-container">
-      <h2>Knowledge</h2>
-      <ul id="knowledge-list"></ul>
-    </div>
-    <div id="projects-container">
-      <h2>Projects</h2>
-      <div id="display-projects">
-        <a href="https://quizforankademin.netlify.app/"><img src="/images/projectQuiz.png" alt="Small picture of project" class="project-link"></a>
-        <a href="https://rentaplant.netlify.app/"><img src="/images/projectWeb.png" alt="Small picture of project" class="project-link"></a>
+    <div id="index-container">
+      <div id="hello">
+        <p id="text-hello">Hi, I'm</p>
+        <p id="text-title">
+          Frontend Developer with .NET experience
+        </p>
+      </div>
+      <div id="name">
+        <h1>
+          <span  id="firstname">Charlotta</span>
+          <span  id="lastname">Lindberg</span>
+        </h1>
+      </div>
+      <figure id="portrait-text">
+        <img
+          id="portrait"
+          src="/images/portrait.webp"
+          alt="Portrait of Lotta"
+          onerror="this.onerror=null; this.src='images/portrait.jpg'"
+        />
+        <figcaption>
+          "Passionate about creating user-friendly
+          web experiences"
+        </figcaption>
+      </figure>
+      <div id="knowledge-container">
+        <h2>Knowledge</h2>
+        <ul id="knowledge-list"></ul>
+      </div>
+      <div id="projects-container">
+        <h2>Projects</h2>
+        <div id="display-projects">
+          <a href="https://quizforankademin.netlify.app/"><img src="/images/projectQuiz.png" alt="Small picture of project" class="project-link"></a>
+          <a href="https://rentaplant.netlify.app/"><img src="/images/projectWeb.png" alt="Small picture of project" class="project-link"></a>
+        </div>
       </div>
     </div>
     <navigation-bar></navigation-bar>
-    
   </body>
 </html>
