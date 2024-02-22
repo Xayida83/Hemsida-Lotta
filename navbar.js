@@ -36,12 +36,6 @@ class NavigationBar extends HTMLElement {
               <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
             </a>
           </li>
-          <li>
-            <a class="nav-link" href="index.html">
-              <span>HOME</span>
-              <i aria-hidden="true"></i>
-            </a>
-          </li>
         </ul>
       </nav>
     `;

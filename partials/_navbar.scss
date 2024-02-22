@@ -109,7 +109,7 @@ ul {
   left: 0;
   transform: translateY(calc(-100% - 5px));
   width: 100%;
-  font-size: 13px;
+  font-size: 16px;
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
@@ -117,7 +117,7 @@ ul {
   color: $primaryTextColor;
   background-color: $teriaryColor;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 .nav input:checked + label {
