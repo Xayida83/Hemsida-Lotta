@@ -178,6 +178,66 @@ ul {
   font-size: 20px;
 }
 
+#hello {
+  color: #fefae0;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  padding: 1em;
+}
+#hello #text-title {
+  max-width: 12em;
+}
+
+#name {
+  max-width: 47%;
+  position: absolute;
+  top: 30px;
+  left: 83px;
+}
+#name #lastname {
+  position: relative;
+  left: 44px;
+}
+
+#portrait {
+  width: 14em;
+  height: 14em;
+  border-radius: 999px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+figcaption {
+  color: #fefae0;
+  padding: 0 1em;
+}
+
+#knowledge-list {
+  margin-top: 1em;
+  color: #DCEC99;
+}
+#knowledge-list li {
+  font-size: 16px;
+  margin: 0.5em;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+}
+#projects-container #display-projects img {
+  margin: 1em 0 0 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -207,57 +267,6 @@ body h3 {
   color: #fefae0;
   text-align: center;
 }
-body #hello {
+body p {
   color: #fefae0;
-  height: 12em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: start;
-  padding: 1em;
-}
-body #hello #text-title {
-  max-width: 12em;
-}
-body #name {
-  max-width: 47%;
-  position: absolute;
-  top: 30px;
-  left: 83px;
-}
-body #name #lastname {
-  position: relative;
-  left: 44px;
-}
-body #portrait {
-  width: 14em;
-  height: 14em;
-  border-radius: 999px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-body figcaption {
-  color: #fefae0;
-  padding: 0 1em;
-}
-body #knowledge-list {
-  margin-top: 1em;
-  color: #DCEC99;
-}
-body #knowledge-list li {
-  font-size: 16px;
-  margin: 0.5em;
-}
-body #projects-container {
-  display: flex;
-  flex-direction: column;
-}
-body #projects-container #display-projects img {
-  margin: 1em 0 0 0;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }/*# sourceMappingURL=style.css.map */

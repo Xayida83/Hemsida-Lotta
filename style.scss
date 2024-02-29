@@ -1,6 +1,14 @@
 @import "./partials/navbar";
 @import "./partials/variables";
 @import "./partials/404";
+@import "./partials/index";
+@import "./partials/about";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -32,57 +40,7 @@ body {
     color: $primaryTextColor;
     text-align: center;
   }
-  #hello {
+  p {
     color: $primaryTextColor;
-    height: 12em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: start;
-    padding: 1em;
-    #text-title {
-      max-width: 12em;
-    }
   }
-  #name {
-    max-width: 47%;
-    position: absolute;
-    top: 30px;
-    left: 83px;
-    #lastname {
-      position: relative;
-      left: 44px;
-    }
-  }
-  #portrait {
-    width: 14em;
-    height: 14em;
-    border-radius: 999px;
-    object-fit: contain;
-  }
-  figcaption {
-    color: $primaryTextColor;
-    padding: 0 1em;
-  }
-  #knowledge-list {
-    margin-top: 1em;
-    color: $textTeriary;
-    li {
-      font-size: 16px;
-      margin: 0.5em;
-    }
-  }
-  #projects-container {
-    display: flex;
-    flex-direction: column;
-    #display-projects img {
-      margin: 1em 0 0 0;
-    }
-  }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
