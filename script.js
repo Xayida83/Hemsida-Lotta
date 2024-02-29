@@ -6,6 +6,7 @@ const technologies = [
   { name: 'HTML', icon: 'fa-html5', faPrefix: 'fab' }, 
   { name: 'Figma', icon: 'fa-figma', faPrefix: 'fab' },
   { name: 'JavaScript', icon: 'fa-js-square', faPrefix: 'fab' },
+  { name: 'C#', icon: 'fa-code', faPrefix: 'fas'},
   { name: 'Git', icon: 'fa-git-alt', faPrefix: 'fab' },
   { name: 'SQL ', icon: 'fa-database', faPrefix: 'fas' },  
   { name: 'SEO', icon: 'fa-search', faPrefix: 'fas' }, // Exempel, Font Awesome har ingen specifik SEO-ikon
