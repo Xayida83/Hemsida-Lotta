@@ -149,6 +149,22 @@ ul {
   transition-delay: 0.9s;
 }
 
+#phone {
+  position: absolute;
+  left: 18px;
+  top: 8px;
+  color: #E91E63;
+  font-size: 30px;
+}
+
+#email {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  color: #E91E63;
+  font-size: 30px;
+}
+
 ¨#not-found-container {
   height: 100vh;
 }
