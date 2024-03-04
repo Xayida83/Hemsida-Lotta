@@ -37,7 +37,7 @@ class NavigationBar extends HTMLElement {
             </a>
           </li>
         </ul>
-        <a id="phone" href="tel:+1234567890">
+        <a id="phone" href="tel:+42729921705">
           <i class="fas fa-phone" aria-hidden="true"></i>
         </a>
         <a id="email" href="mailto:charlotta.lindberg@yh.nackademin.se">
