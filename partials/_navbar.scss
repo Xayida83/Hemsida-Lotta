@@ -36,9 +36,9 @@ ul {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   // border-radius: 5px 5px 25px 25px;
-  margin: 300px auto 0;
+  margin: 229px auto 0;
   background: $seconderyColor;
   box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
     rgb(0 0 0 / 15%) 0 18px 36px -18px;
@@ -105,17 +105,17 @@ ul {
 
 .menu li a span {
   position: absolute;
-  top: -7px;
-  left: 0;
+  top: 63px;
+  left: -10px;
   transform: translateY(calc(-100% - 5px));
-  width: 100%;
+  width: 147%;
   font-size: 16px;
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
   color: $primaryTextColor;
-  background-color: $teriaryColor;
+  background-color: black;
   font-weight: bold;
   border-radius: 5px;
 }

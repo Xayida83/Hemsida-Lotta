@@ -7,6 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
     <script src="navbar.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -14,18 +20,20 @@
   </head>
   <body>
     <div id="index-container">
-      <div id="hello">
-        <p id="text-hello">Hi, I'm</p>
-        <p id="text-title">
-          Frontend Developer with .NET experience
-        </p>
-      </div>
-      <div id="name">
-        <h1>
-          <span  id="firstname">Charlotta</span>
-          <span  id="lastname">Lindberg</span>
-        </h1>
-      </div>
+      <header>
+        <div id="hello">
+          <p id="text-hello">Hi, I'm</p>
+          <p id="text-title">
+            Frontend Developer with .NET experience
+          </p>
+        </div>
+        <div id="name">
+          <h1>
+            <span  id="firstname">Charlotta</span>
+            <span  id="lastname">Lindberg</span>
+          </h1>
+        </div>
+      </header>
       <figure id="portrait-text">
         <img
           id="portrait"
@@ -45,8 +53,26 @@
       <div id="projects-container">
         <h2>Projects</h2>
         <div id="display-projects">
-          <a href="https://quizforankademin.netlify.app/"><img src="/images/projectQuiz.png" alt="Small picture of project" class="project-link"></a>
-          <a href="https://rentaplant.netlify.app/"><img src="/images/projectWeb.png" alt="Small picture of project" class="project-link"></a>
+          <div class="link-container">
+            <img src="/images/project-link-plant.png" alt="rent-a-plant" class="image">
+            <div class="layer">             
+                <h4>Rent a Plant</h4>
+                <p>My first project at Nackademin. A Group-project! </p>
+                <a href="https://rentaplant.netlify.app/"><i class="fas fa-external-link-alt"></i></a>              
+            </div>
+          </div>
+          <div class="link-container">
+            <img src="/images/project-link-quiz.png" alt="Friends" class="image">
+            <div class="layer">
+              <div class="layer">             
+                <h4>Rent a Plant</h4>
+                <p>My first project in Javascript</p>
+                <a href="https://quizforankademin.netlify.app/"><i class="fas fa-external-link-alt"></i></a>              
+            </div>
+              
+            
+            </div>
+          </div>          
         </div>
       </div>
     </div>
