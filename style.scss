@@ -51,4 +51,10 @@ body {
     font-size: $textSizeSmall;
     color: $primaryTextColor;
   }
+  .link {
+    display: flex;
+    justify-content: center;
+    color: $textTeriary;
+    font-size: 20px;
+  }
 }

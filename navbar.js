@@ -13,7 +13,7 @@ class NavigationBar extends HTMLElement {
         <label for="menu">Menu</label>
         <ul class="menu">
           <li>
-            <a class="nav-link" href="404.html">
+            <a class="nav-link" href="about.html">
               <span>About</span>
               <i class="fas fa-address-card" aria-hidden="true"></i>
             </a>

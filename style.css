@@ -172,11 +172,6 @@ ul {
   margin: 30px 0;
 }
 
-.link {
-  color: #DCEC99;
-  font-size: 20px;
-}
-
 #hello {
   color: #fefae0;
   height: 12em;
@@ -289,6 +284,28 @@ figcaption {
   height: 100%;
 }
 
+#aboutContainer {
+  padding: 1em;
+  text-align: left;
+  min-height: 58em;
+}
+#aboutContainer p {
+  margin: 1em 0em;
+}
+
+.accordion-item {
+  border-radius: 10px;
+}
+.accordion-item .accordion-button {
+  background-color: rgba(50, 48, 67, 0.6509803922);
+  color: #fefae0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.accordion-item .accordion-body {
+  text-align: left;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -333,4 +350,10 @@ body h4 {
 body p {
   font-size: 1em;
   color: #fefae0;
+}
+body .link {
+  display: flex;
+  justify-content: center;
+  color: #DCEC99;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
