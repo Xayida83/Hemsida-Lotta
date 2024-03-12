@@ -4,12 +4,19 @@
   padding: 1em;
   text-align: left;
   min-height: 58em;
+  @media #{$desktop}{
+    margin: 5em 9em;
+  }
   p {
     margin: 1em 0em
   }  
 }
 
 // accordion
+.accordion {
+  max-width: 30em;
+  margin: 3em auto;
+}
 .accordion-item{
   border-radius: 10px;
   .accordion-button {

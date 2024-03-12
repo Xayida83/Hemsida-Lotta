@@ -14,12 +14,7 @@ body {
   font-family: "Inter", sans-serif;
   text-align: center;
   background: $primaryColor;
-  #index-container {
-    height: 94em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
+  
 
   h1 {
     font-family: "DM Serif Display";

@@ -1,4 +1,16 @@
-
+#index-container {
+  height: 94em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  @media #{$desktop}{
+    margin: 5em 9em;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  
+}
 #hello {
   color: $primaryTextColor;
   height: 12em;
@@ -12,13 +24,18 @@
   }
 }
 #name {
-  max-width: 47%;
+  max-width: 21em;
   position: absolute;
-  top: 30px;
-  left: 83px;
+  top: 36px;
+  left: 34px;
+
   #lastname {
     position: relative;
     left: 44px;
+  }
+  @media #{$desktop}{
+    top: 118px;
+    left: 154px;
   }
 }
 #portrait {
@@ -57,12 +74,14 @@ figcaption {
 .link-container {
   position: relative;
   overflow: hidden;
-  
+  @media #{$desktop}{
+    width: 23em;
+  }
   img {
     max-width: 100%;
     display: block;
     transition: transform 0.5s;
-  }
+  }  
 }
 .layer {
   width: 100%;
