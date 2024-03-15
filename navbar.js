@@ -8,7 +8,7 @@ class NavigationBar extends HTMLElement {
     // Lägger till navigationsbaren HTML
     shadow.innerHTML = `
       <link rel="stylesheet" href="style.css">
-      <nav class="nav">
+      <nav class="navbar">
         <input id="menu" type="checkbox">
         <label for="menu">Menu</label>
         <ul class="menu">
@@ -26,7 +26,7 @@ class NavigationBar extends HTMLElement {
           </li>
           <li>
             <a class="nav-link" href="404.html">
-              <span>CV</span>
+              <span>Resume</span>
               <i class="fas fa-users" aria-hidden="true"></i>
             </a>
           </li>

@@ -1,0 +1,38 @@
+@import "./variables";
+
+.desktop-nav {
+  display: none;
+
+  @media #{$desktop}{    
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em 2em 0em 0em;
+    
+    .desktop-ul{      
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      gap: 2em;
+      border-bottom: solid $primaryTextColor 0.2em;
+
+      .desktop-li {
+        font-size: $textSizeLarge;
+        font-family: $fontFamilyPrimary;
+        
+        a{
+          color: $primaryTextColor;
+          text-decoration: none;
+          &:hover {
+          color: $textBrand;
+          }
+        }
+        
+      }
+    }
+    
+  }
+  
+}
+.active {
+  text-decoration: overline;
+}

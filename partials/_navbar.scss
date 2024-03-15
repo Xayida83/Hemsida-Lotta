@@ -17,17 +17,10 @@ ul {
   list-style: none;
 }
 
-/* .notification {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  background: var(--violet);
-} */
 
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.nav {
+.navbar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -42,14 +35,17 @@ ul {
   background: $seconderyColor;
   box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
     rgb(0 0 0 / 15%) 0 18px 36px -18px;
+    @media #{$desktop}{
+      display: none;
+    }
 }
 
-.nav [type="checkbox"] {
+.navbar [type="checkbox"] {
   position: absolute;
   left: -9999px;
 }
 
-.nav [type="checkbox"] + label {
+.navbar [type="checkbox"] + label {
   position: relative;
   width: 75px;
   height: 75px;
@@ -65,7 +61,7 @@ ul {
   transition: all 0.2s;
 }
 
-.nav [type="checkbox"] + label:hover {
+.navbar [type="checkbox"] + label:hover {
   background: $surfaceBrand;
 }
 
@@ -120,35 +116,35 @@ ul {
   border-radius: 5px;
 }
 
-.nav input:checked + label {
+.navbar input:checked + label {
   background: $surfaceBrand;
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
   transform: translateY(calc(-50% + 4px));
 }
 
-.nav input:checked ~ .menu li:nth-child(1) {
+.navbar input:checked ~ .menu li:nth-child(1) {
   top: -210px;
   transition-delay: 0.1s;
 }
 
-.nav input:checked ~ .menu li:nth-child(2) {
+.navbar input:checked ~ .menu li:nth-child(2) {
   top: -160px;
   left: calc(50% - 75px);
   transition-delay: 0.2s;
 }
 
-.nav input:checked ~ .menu li:nth-child(3) {
+.navbar input:checked ~ .menu li:nth-child(3) {
   top: -160px;
   left: calc(50% + 75px);
   transition-delay: 0.3s;
 }
 
-.nav input:checked ~ .menu li:nth-child(4) {
+.navbar input:checked ~ .menu li:nth-child(4) {
   top: -110px;
   transition-delay: 0.4s;
 }
 
-.nav input:checked ~ .menu li a span {
+.navbar input:checked ~ .menu li a span {
   opacity: 1;
   transition-delay: 0.9s;
 }

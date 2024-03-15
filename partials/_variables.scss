@@ -14,8 +14,12 @@ $textSizeMiddle: 1.6em;
 $textSizeSmall: 1em;
 $textSizeXSmall: 0.6em;
 
+$fontFamilyPrimary: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
 //Mediaqueries
 $desktop: "screen and (min-width: 700px)";
+$mobile: "screen and (max-width: 700px)";
+
 
 // @media #{$desktop} {
 //   flex-direction: column;

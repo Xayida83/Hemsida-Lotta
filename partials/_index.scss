@@ -4,10 +4,11 @@
   flex-direction: column;
   gap: 1em;
   @media #{$desktop}{
-    margin: 5em 9em;
+    margin: 3em 9em;
     flex-flow: row wrap;
     justify-content: space-evenly;
     height: auto;
+    gap: 3em;
   }
   
 }
