@@ -199,12 +199,17 @@ ul {
 #hello #text-title {
   max-width: 12em;
 }
+@media screen and (min-width: 700px) {
+  #hello {
+    height: 18em;
+  }
+}
 
 #name {
   max-width: 21em;
   position: absolute;
-  top: 36px;
-  left: 34px;
+  top: 2.4em;
+  left: 2.5em;
 }
 #name #lastname {
   position: relative;
@@ -212,8 +217,8 @@ ul {
 }
 @media screen and (min-width: 700px) {
   #name {
-    top: 118px;
-    left: 154px;
+    top: 11em;
+    left: 14em;
   }
 }
 
@@ -223,6 +228,12 @@ ul {
   border-radius: 999px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media screen and (min-width: 700px) {
+  #portrait {
+    width: 19em;
+    height: 19em;
+  }
 }
 
 figcaption {
@@ -285,6 +296,9 @@ figcaption {
   flex-direction: column;
   font-size: 1em;
   transition: height 0.5s;
+}
+.layer p {
+  max-width: 65%;
 }
 .layer a {
   margin-top: 20px;

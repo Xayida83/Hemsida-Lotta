@@ -22,20 +22,23 @@
   #text-title {
     max-width: 12em;
   }
+  @media #{$desktop}{
+    height: 18em;
+  }
 }
 #name {
   max-width: 21em;
   position: absolute;
-  top: 36px;
-  left: 34px;
+  top: 2.4em;
+  left: 2.5em;
 
   #lastname {
     position: relative;
     left: 44px;
   }
   @media #{$desktop}{
-    top: 118px;
-    left: 154px;
+    top: 11em;
+    left: 14em;
   }
 }
 #portrait {
@@ -43,6 +46,10 @@
   height: 14em;
   border-radius: 999px;
   object-fit: contain;
+  @media #{$desktop} {
+    width: 19em;
+    height: 19em;
+  }
 }
 figcaption {
   color: $primaryTextColor;
@@ -98,6 +105,9 @@ figcaption {
   flex-direction: column;
   font-size: $textSizeSmall;
   transition: height 0.5s;
+  p {
+    max-width: 65%;
+  }
   a {
     margin-top: 20px;
     color: #232946;
