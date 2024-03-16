@@ -432,6 +432,7 @@ a, a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .postcard .postcard__preview-txt {
   display: flex;
@@ -458,6 +459,18 @@ a, a:hover {
 }
 .postcard .collapse {
   display: none;
+}
+.postcard .reference .referenceImg {
+  width: 7em;
+  height: 7em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 9999px;
+}
+@media screen and (min-width: 700px) {
+  .postcard .reference .one, .postcard .reference .two {
+    width: 45%;
+  }
 }
 .postcard .postcard__tagbox {
   display: flex;
@@ -500,6 +513,7 @@ a, a:hover {
 @media screen and (min-width: 769px) {
   .postcard {
     flex-wrap: inherit;
+    width: 100%;
   }
   .postcard .postcard__title {
     font-size: 2rem;

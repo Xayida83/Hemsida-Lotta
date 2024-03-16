@@ -25,7 +25,7 @@ class NavigationBar extends HTMLElement {
             </a>
           </li>
           <li>
-            <a class="nav-link" href="404.html">
+            <a class="nav-link" href="resume.html">
               <span>Resume</span>
               <i class="fas fa-users" aria-hidden="true"></i>
             </a>

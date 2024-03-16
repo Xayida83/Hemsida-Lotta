@@ -100,6 +100,7 @@ a, a:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .postcard__preview-txt {
@@ -127,6 +128,21 @@ a, a:hover {
   }
   .collapse {
     display: none;
+  }
+  .reference {
+    .referenceImg{
+      width: 7em;
+      height: 7em;
+      object-fit: cover;
+      border-radius: 9999px;
+    }
+    @media #{$desktop}{
+      .one, .two{
+      width: 45%;
+      
+    }
+    }
+    
   }
 
   .postcard__tagbox {
@@ -173,6 +189,7 @@ a, a:hover {
 @media screen and (min-width: 769px) {
   .postcard {
     flex-wrap: inherit;
+    width: 100%;
 
     .postcard__title {
       font-size: 2rem;
