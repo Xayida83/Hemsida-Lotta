@@ -9,8 +9,8 @@ class DesktopNav extends HTMLElement {
       <nav class="desktop-nav">
         <ul class="desktop-ul">
           <li class="desktop-li">
-            <a href="about.html">
-              About
+            <a href="index.html">
+              Home
             </a>
           </li>
           <li class="desktop-li">
@@ -26,11 +26,6 @@ class DesktopNav extends HTMLElement {
           <li class="desktop-li">
             <a href="404.html">
               Contact
-            </a>
-          </li>
-          <li class="desktop-li">
-            <a href="index.html">
-              Home
             </a>
           </li>
         </ul>

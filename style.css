@@ -441,7 +441,7 @@ a, a:hover {
   justify-content: space-evenly;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: justify;
+  text-align: left;
   height: 100%;
   gap: 1em;
 }
@@ -450,6 +450,7 @@ a, a:hover {
   background-color: rgb(233, 30, 99);
   border-color: rgb(233, 30, 99);
   border-radius: 9999px;
+  margin: 0 0 0.5em 0;
 }
 .postcard .postcard__preview-txt .cv-button:hover {
   background-color: #aa1145;
@@ -466,6 +467,9 @@ a, a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 9999px;
+}
+.postcard .reference .name {
+  font-weight: 700;
 }
 @media screen and (min-width: 700px) {
   .postcard .reference .one, .postcard .reference .two {
@@ -762,4 +766,14 @@ body .link {
   justify-content: center;
   color: #DCEC99;
   font-size: 20px;
+}
+body .small-link {
+  display: flex;
+  justify-content: flex-start;
+  color: #DCEC99;
+}
+body .small-link a {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
 }/*# sourceMappingURL=style.css.map */
