@@ -24,7 +24,7 @@ class DesktopNav extends HTMLElement {
             </a>
           </li>
           <li class="desktop-li">
-            <a href="404.html">
+            <a href="contact.html">
               Contact
             </a>
           </li>

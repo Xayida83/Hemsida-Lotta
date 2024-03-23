@@ -32,11 +32,6 @@ a, a:hover {
 	transition: color 0.3s ease-in-out;
 }
 
-#pageHeaderTitle {
-	margin: 2rem 0;
-	font-size: 2.5rem;
-}
-
 /* Cards */
 .postcard {
   flex-wrap: wrap;
@@ -113,19 +108,7 @@ a, a:hover {
     text-align: left;
     height: 100%;
     gap: 1em;
-    .cv-button {
-      color: $primaryTextColor;
-      background-color: $surfaceBrand;
-      border-color: $surfaceBrand;
-      border-radius: 9999px;
-      margin: 0 0 0.5em 0;
-      &:hover {
-        background-color: darken($surfaceBrand, 15%);;
-      }
-    }
-    .btn-secondary{
-      border-radius: 9999px;
-    } 
+    
   }
   .collapse {
     display: none;

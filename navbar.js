@@ -31,7 +31,7 @@ class NavigationBar extends HTMLElement {
             </a>
           </li>
           <li>
-            <a class="nav-link" href="404.html">
+            <a class="nav-link" href="contact.html">
               <span>Contact</span>
               <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
             </a>

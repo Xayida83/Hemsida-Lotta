@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -378,11 +379,6 @@ a, a:hover {
   transition: color 0.3s ease-in-out;
 }
 
-#pageHeaderTitle {
-  margin: 2rem 0;
-  font-size: 2.5rem;
-}
-
 /* Cards */
 .postcard {
   flex-wrap: wrap;
@@ -444,19 +440,6 @@ a, a:hover {
   text-align: left;
   height: 100%;
   gap: 1em;
-}
-.postcard .postcard__preview-txt .cv-button {
-  color: #fefae0;
-  background-color: rgb(233, 30, 99);
-  border-color: rgb(233, 30, 99);
-  border-radius: 9999px;
-  margin: 0 0 0.5em 0;
-}
-.postcard .postcard__preview-txt .cv-button:hover {
-  background-color: #aa1145;
-}
-.postcard .postcard__preview-txt .btn-secondary {
-  border-radius: 9999px;
 }
 .postcard .collapse {
   display: none;
@@ -722,6 +705,39 @@ a, a:hover {
   text-decoration: overline;
 }
 
+#contact-container {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  text-align: left;
+  min-height: 70em;
+}
+@media screen and (min-width: 700px) {
+  #contact-container {
+    margin: 2em 9em;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.contact-info .qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.contact-info .qr-container .qr-img {
+  height: 22em;
+  border-radius: 20px;
+}
+.contact-info .qr-container .http {
+  font-size: 1.6em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -738,6 +754,10 @@ body h1 {
   font-size: 2.6em;
   color: #E91E63;
   text-align: center;
+}
+body .pageHeaderTitle {
+  margin: 2rem 0;
+  font-size: 2.5rem;
 }
 body h2 {
   font-family: "DM Serif Display";
@@ -770,10 +790,23 @@ body .link {
 body .small-link {
   display: flex;
   justify-content: flex-start;
-  color: #DCEC99;
 }
-body .small-link a {
+body .small-link .http {
   display: flex;
   gap: 1em;
   align-items: baseline;
+  color: #DCEC99;
+}
+body .button {
+  color: #fefae0;
+  background-color: rgb(233, 30, 99);
+  border-color: rgb(233, 30, 99);
+  border-radius: 9999px;
+  margin: 0 0 0.5em 0;
+}
+body .button:hover {
+  background-color: #aa1145;
+}
+body .btn-secondary {
+  border-radius: 9999px;
 }/*# sourceMappingURL=style.css.map */

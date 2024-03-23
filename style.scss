@@ -5,6 +5,7 @@
 @import "./partials/about";
 @import "./partials/resume";
 @import "./partials/desktopNav";
+@import "./partials/contact";
 
 * {
   box-sizing: border-box;
@@ -23,6 +24,10 @@ body {
     font-size: $textSizeXLarge;
     color: $textBrand;
     text-align: center;
+  }
+  .pageHeaderTitle {
+    margin: 2rem 0;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -57,11 +62,25 @@ body {
   .small-link {
     display: flex;
     justify-content: flex-start;
-    color: $textTeriary;
-    a {
+    
+    .http {
       display: flex;
       gap: 1em;
       align-items: baseline;
+      color: $textTeriary;
     }
   }
+  .button {
+    color: $primaryTextColor;
+    background-color: $surfaceBrand;
+    border-color: $surfaceBrand;
+    border-radius: 9999px;
+    margin: 0 0 0.5em 0;
+    &:hover {
+      background-color: darken($surfaceBrand, 15%);;
+    }
+  }
+  .btn-secondary{
+    border-radius: 9999px;
+  } 
 }
